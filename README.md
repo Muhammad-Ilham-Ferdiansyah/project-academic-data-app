@@ -1,6 +1,6 @@
-# CRUD Using Room Database
+# Academic Data App
 
-> Practice Mobile Programming
+> Group Task for Mobile Programming 
 
 ---
 
@@ -17,14 +17,18 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-- CRUD Using Room Database
-- CRUD Data User (Name and Email)
+- Minimum 4 Relation Tables
+- Can CRUD for each Tables
+- Use RecycleView/ListView for data view
+- Menu View for managing each Tables
+- Login and Register Using SharedPreferences
+- Make Report Tutorial Application Detail
 
 
 ## Activity
 
 - MainActivity
-- TambahActivity
+- LoginActivity
 
 #### Technologies
 
@@ -32,11 +36,14 @@ You're sections headers will be used to reference location of destination.
 - Java 17.1
 - jdk 17
 
-[Back To The Top](#crud-using-room-database)
+[Back To The Top](#academic-data-app)
 
 ---
 
 ## Developer
 
-- Twitter - [@ISupermahL](https://twitter.com/ISupermahl)
-- Instagram - [Muhammad Ilham Ferdiansyah](https://www.instagram.com/hmfrdnsyh_/)
+- M. Ilham
+- M. Raihan Nur Azmii
+- Aldo Dwie Rizky
+- Raihan Malikul Mulki
+- Dedi Hidayat Siregar

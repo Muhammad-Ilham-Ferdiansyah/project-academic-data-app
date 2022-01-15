@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.240625" />
+        <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_beranda.xml" value="0.25" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.22447916666666667" />

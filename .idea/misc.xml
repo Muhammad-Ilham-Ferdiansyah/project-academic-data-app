@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_beranda.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/ProjectAcademicDataApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.22447916666666667" />
@@ -20,6 +19,7 @@
         <entry key="..\:/Users/ALDO DWIE RIZKY/AndroidStudioProjects/project-academic-data-app/app/src/main/res/layout/activity_register.xml" value="0.14" />
         <entry key="..\:/Users/ALDO DWIE RIZKY/AndroidStudioProjects/project-academic-data-app/app/src/main/res/layout/activity_splash_screen.xml" value="0.14" />
         <entry key="..\:/Users/ALDO DWIE RIZKY/AndroidStudioProjects/project-academic-data-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18703703703703703" />
+        <entry key="..\:/Users/ASUS/OneDrive/Documents/Project/AndroidStudioProjects/project-academic-data-app/app/src/main/res/layout/activity_beranda.xml" value="0.13269927536231885" />
         <entry key="..\:/Users/ASUS/OneDrive/Documents/Project/AndroidStudioProjects/project-academic-data-app/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
       </map>
     </option>

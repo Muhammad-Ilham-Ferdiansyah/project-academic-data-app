@@ -43,7 +43,7 @@ You're sections headers will be used to reference location of destination.
 ## Developer
 
 - M. Ilham
-- M. Raihan Nur Azmii
+- Muhammad Raihan Nur Azmii
 - Aldo Dwie Rizky
 - Raihan Malikul Mulki
 - Dedi Hidayat Siregar

@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAcademicDataApp">
         <activity
+            android:name=".BerandaActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"

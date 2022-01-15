@@ -11,7 +11,8 @@
         android:theme="@style/Theme.ProjectAcademicDataApp">
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true"

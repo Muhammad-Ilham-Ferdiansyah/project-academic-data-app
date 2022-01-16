@@ -180,6 +180,7 @@
 </GridLayout>
 
     <Button
+        android:id="@+id/logout"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/card_view"
@@ -187,8 +188,8 @@
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/red"
         android:padding="10dp"
-        android:textStyle="bold"
-        android:text="Logout">
+        android:text="Logout"
+        android:textStyle="bold">
 
     </Button>
 

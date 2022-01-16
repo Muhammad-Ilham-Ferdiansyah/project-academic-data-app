@@ -60,7 +60,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
-                            android:id="@+id/editTextName"
+                            android:id="@+id/etName"
                             style="@style/modifiedEditText"
                             android:hint="Name"
                             android:inputType="textPersonName"
@@ -73,7 +73,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
-                            android:id="@+id/editTextEmail"
+                            android:id="@+id/input_email"
                             style="@style/modifiedEditText"
                             android:hint="@string/login_email_hint"
                             android:inputType="textEmailAddress"
@@ -86,7 +86,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
-                            android:id="@+id/editTextMobile"
+                            android:id="@+id/etMobile"
                             style="@style/modifiedEditText"
                             android:hint="Mobile Number"
                             android:inputType="phone"
@@ -99,7 +99,7 @@
                         android:layout_marginTop="20dp">
 
                         <EditText
-                            android:id="@+id/editTextPassword"
+                            android:id="@+id/input_password"
                             style="@style/modifiedEditText"
                             android:hint="@string/login_password_hint"
                             android:inputType="textPassword"
@@ -107,7 +107,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/cirRegisterButton"
+                        android:id="@+id/buttonRegister"
                         style="@style/loginButton"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="20dp"
@@ -116,7 +116,6 @@
                     <TextView
                         style="@style/parent"
                         android:layout_marginTop="20dp"
-                        android:onClick="onLoginClick"
                         android:text="Already have an account?"
                         android:textAlignment="center"
                         android:textColor="@color/themeColor"
@@ -178,6 +177,5 @@
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
         android:adjustViewBounds="false"
-        android:onClick="onLoginClick"
         android:src="@drawable/ic_back_img" />
 </RelativeLayout>

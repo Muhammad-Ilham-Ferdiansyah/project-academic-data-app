@@ -48,7 +48,7 @@
                 android:layout_marginTop="40dp">
 
                 <EditText
-                    android:id="@+id/editTextEmail"
+                    android:id="@+id/input_email"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_email_hint"
                     android:inputType="textEmailAddress"
@@ -61,7 +61,7 @@
                 android:layout_marginTop="@dimen/loginViewsMargin">
 
                 <EditText
-                    android:id="@+id/editTextPassword"
+                    android:id="@+id/input_password"
                     style="@style/modifiedEditText"
                     android:hint="@string/login_password_hint"
                     android:inputType="textPassword"
@@ -69,20 +69,22 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/cirLoginButton"
+                android:id="@+id/btn_Login"
                 style="@style/loginButton"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="50dp"
                 android:text="Login" />
 
             <TextView
+
+                android:id="@+id/Register"
                 style="@style/parent"
                 android:layout_marginTop="@dimen/loginViewsMargin"
-                android:onClick="onLoginClick"
                 android:text="New user? Register Now"
                 android:textAlignment="center"
                 android:textColor="@color/themeColor"
                 android:textSize="17sp"
+
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -97,13 +99,14 @@
         android:background="@drawable/ic_side_bg" />
 
     <ImageView
+        android:id="@+id/Register2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginRight="11dp"
         android:layout_marginBottom="30dp"
-        android:onClick="onLoginClick"
+
         android:src="@drawable/ic_add_img" />
 
 </RelativeLayout>

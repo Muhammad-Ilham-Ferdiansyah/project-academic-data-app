@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectAcademicDataApp">
         <activity
+            android:name=".TambahDosen"
+            android:exported="false" />
+        <activity
+            android:name=".MainDosen"
+            android:exported="false" />
+        <activity
             android:name=".BerandaActivity"
             android:exported="false" />
         <activity

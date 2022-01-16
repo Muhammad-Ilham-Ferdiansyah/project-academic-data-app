@@ -16,7 +16,7 @@ public class BerandaActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
 
     private static final String SHARED_PREF_NAME = "mypref";
-    private static final String KEY_USERNAME = "username";
+    private static final String KEY_NAME = "name";
     private static final String KEY_EMAIL = "email";
 
     @Override
@@ -28,7 +28,7 @@ public class BerandaActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME,MODE_PRIVATE);
 
-        String name = sharedPreferences.getString(KEY_USERNAME,null);
+        String name = sharedPreferences.getString(KEY_NAME,null);
         String email = sharedPreferences.getString(KEY_EMAIL,null);
 
         button_logout.setOnClickListener(new View.OnClickListener() {

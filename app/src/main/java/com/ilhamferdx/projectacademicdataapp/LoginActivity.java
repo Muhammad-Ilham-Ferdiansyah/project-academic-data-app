@@ -78,15 +78,15 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String usernameValidate = editText_email.getText().toString();
+                String emailValidate = editText_email.getText().toString();
                 String passwordValidate = editText_password.getText().toString();
-                if (usernameValidate.equals(name) && passwordValidate.equals(password)){
+                if (emailValidate.equals(email) && passwordValidate.equals(password)){
                     Toast.makeText(LoginActivity.this, "Login Successfully!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, BerandaActivity.class);
                     startActivity(intent);
-                } else if (usernameValidate.isEmpty() && passwordValidate.isEmpty()){
+                } else if (emailValidate.isEmpty() && passwordValidate.isEmpty()){
                     Toast.makeText(LoginActivity.this, "Please fill your username and password!", Toast.LENGTH_SHORT).show();
-                }else if (usernameValidate.isEmpty()){
+                }else if (emailValidate.isEmpty()){
                     Toast.makeText(LoginActivity.this, "Please fill your username!", Toast.LENGTH_SHORT).show();
                 } else if (passwordValidate.isEmpty()){
                     Toast.makeText(LoginActivity.this, "Please fill your password!", Toast.LENGTH_SHORT).show();

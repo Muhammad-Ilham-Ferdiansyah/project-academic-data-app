@@ -32,8 +32,8 @@ public class TambahDosen extends AppCompatActivity {
         if (dsnid>0){
             isEdit = true;
             Dosen dosen = database.dosenDao().get(dsnid);
-            editNip.setText(dosen.nip);
             editNameDsn.setText(dosen.nama_dosen);
+            editNip.setText(dosen.nip);
         }else{
             isEdit = false;
         }

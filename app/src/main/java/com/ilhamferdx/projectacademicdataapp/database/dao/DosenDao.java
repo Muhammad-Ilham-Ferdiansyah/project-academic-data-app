@@ -17,7 +17,7 @@ public interface DosenDao {
     void insertAll(String dsnname, String nip);
 
     @Query("UPDATE dosen SET dsnname=:dsnname, nip=:nip WHERE dsnid=:dsnid")
-    void update(int dsnid, String nip, String dsnname);
+    void update(int dsnid, String dsnname, String nip);
 
     @Query("SELECT * FROM dosen WHERE dsnid=:dsnid")
     Dosen get(int dsnid);

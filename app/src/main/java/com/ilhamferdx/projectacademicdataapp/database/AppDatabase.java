@@ -1,6 +1,7 @@
 package com.ilhamferdx.projectacademicdataapp.database;
 
 import android.content.Context;
+import android.os.Build;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
@@ -11,9 +12,14 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.ilhamferdx.projectacademicdataapp.database.dao.DosenDao;
+import com.ilhamferdx.projectacademicdataapp.database.dao.JurusanDao;
 import com.ilhamferdx.projectacademicdataapp.database.entity.Dosen;
+import com.ilhamferdx.projectacademicdataapp.database.entity.Jurusan;
 
-@Database(entities = {Dosen.class}, version = 1)
+@Database(entities = {
+        Dosen.class,
+        Jurusan.class
+        }, version = 3)
 public abstract class AppDatabase extends RoomDatabase{
     private static AppDatabase sInstance;
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
@@ -22,6 +28,7 @@ public abstract class AppDatabase extends RoomDatabase{
     public static final String DATABASE_NAME = "pada_DB";
 
     public abstract DosenDao dosenDao();
+    public abstract JurusanDao jurusanDao();
 
     private void setDatabaseCreated(){
         mIsDatabaseCreated.postValue(true);

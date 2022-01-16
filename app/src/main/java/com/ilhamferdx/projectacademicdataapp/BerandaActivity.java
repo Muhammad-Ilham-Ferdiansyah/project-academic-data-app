@@ -28,7 +28,7 @@ public class BerandaActivity extends AppCompatActivity {
 
         button_logout = findViewById(R.id.logout);
         btnDosen      = findViewById(R.id.data_dosen);
-//        btnJurusan    = findViewById(R.id.data_jurusan);
+        btnJurusan    = findViewById(R.id.data_jurusan);
 //        btnMatkul     = findViewById(R.id.data_matkul);
 //        btnMahasiswa  = findViewById(R.id.data_mahasiswa);
 
@@ -49,13 +49,13 @@ public class BerandaActivity extends AppCompatActivity {
 //            }
 //        });
 //
-//        btnJurusan.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(BerandaActivity.this, MainJurusan.class);
-//                startActivity(intent);
-//            }
-//        });
+        btnJurusan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BerandaActivity.this, MainJurusan.class);
+                startActivity(intent);
+            }
+        });
 //
 //        btnMahasiswa.setOnClickListener(new View.OnClickListener() {
 //            @Override

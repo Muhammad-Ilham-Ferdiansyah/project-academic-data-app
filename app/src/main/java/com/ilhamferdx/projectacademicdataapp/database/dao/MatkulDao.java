@@ -14,10 +14,10 @@ public interface MatkulDao {
     List<Matkul> getALl();
 
     @Query("INSERT INTO matkul (kode, matkulname, sks) VALUES(:kode, :matkulname, :sks)")
-    void insertAll(String kode, String matkulname, String sks);
+    void insertAll(String kode, String matkulname, int sks);
 
     @Query("UPDATE matkul SET kode=:kode, matkulname=:matkulname, sks=:sks WHERE matkulid=:matkulid")
-    void update(int matkulid, String kode, String matkulname, String sks);
+    void update(int matkulid, String kode, String matkulname, int sks);
 
     @Query("SELECT * FROM matkul WHERE matkulid=:matkulid")
     Matkul get(int matkulid);

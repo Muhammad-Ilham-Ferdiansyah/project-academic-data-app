@@ -54,11 +54,11 @@ public class TambahMatkul extends AppCompatActivity {
                 if (isEdit){
                     database.matkulDao().update(matkulid, editKodeMatkul.getText().toString(),
                             editNameMatkul.getText().toString(),
-                            editSks.getText().toString()); //ini bor kalo error liat kesini
+                            Integer.parseInt(editSks.getText().toString())); //ini bor kalo error liat kesini
                 }else{
                     database.matkulDao().insertAll(editKodeMatkul.getText().toString(),
                             editNameMatkul.getText().toString(),
-                            editSks.getText().toString()); //check bor
+                            Integer.parseInt(editSks.getText().toString())); //check bor
                 }
                 finish();
             }

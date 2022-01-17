@@ -15,7 +15,7 @@ public class Matkul {
     @ColumnInfo(name = "matkulname")
     public String nama_matkul;
 
-    public String sks;
+    public int sks;
 
 
 }

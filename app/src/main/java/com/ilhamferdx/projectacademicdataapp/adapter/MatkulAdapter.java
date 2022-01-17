@@ -43,9 +43,9 @@ public class MatkulAdapter extends RecyclerView.Adapter<MatkulAdapter.ViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MatkulAdapter.ViewAdapter holder, int position) {
-//        holder.kode_matkul.setText(list.get(position).kode_matkul);
+//      holder.kode_matkul.setText(list.get(position).kode_matkul);
         holder.nama_matkul.setText(list.get(position).nama_matkul);
-        holder.sks.setText(list.get(position).sks);
+        holder.sks.setText(String.valueOf(list.get(position).sks));
     }
 
     @Override

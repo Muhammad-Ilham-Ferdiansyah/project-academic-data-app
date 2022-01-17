@@ -43,7 +43,7 @@ public class TambahMatkul extends AppCompatActivity {
             Matkul matkul = database.matkulDao().get(matkulid);
             editKodeMatkul.setText(matkul.kode_matkul);
             editNameMatkul.setText(matkul.nama_matkul);
-            editSks.setText(matkul.sks);
+            editSks.setText(String.valueOf(matkul.sks));
         }else{
             setTitle("Tambah Data Mata Kuliah");
             isEdit = false;

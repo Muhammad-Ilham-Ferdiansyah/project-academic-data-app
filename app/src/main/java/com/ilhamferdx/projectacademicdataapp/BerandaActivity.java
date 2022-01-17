@@ -30,7 +30,7 @@ public class BerandaActivity extends AppCompatActivity {
         btnDosen      = findViewById(R.id.data_dosen);
         btnJurusan    = findViewById(R.id.data_jurusan);
         btnMatkul     = findViewById(R.id.data_matkul);
-//        btnMahasiswa  = findViewById(R.id.data_mahasiswa);
+        btnMahasiswa  = findViewById(R.id.data_mahasiswa);
 
 //        Aksi setiap Card
         btnDosen.setOnClickListener(new View.OnClickListener() {
@@ -56,14 +56,14 @@ public class BerandaActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//
-//        btnMahasiswa.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(BerandaActivity.this, MainMahasiswa.class);
-//                startActivity(intent);
-//            }
-//        });
+
+        btnMahasiswa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BerandaActivity.this, MainMahasiswa.class);
+                startActivity(intent);
+            }
+        });
 
 
         //sahred preferences

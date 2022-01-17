@@ -13,16 +13,19 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.ilhamferdx.projectacademicdataapp.database.dao.DosenDao;
 import com.ilhamferdx.projectacademicdataapp.database.dao.JurusanDao;
+import com.ilhamferdx.projectacademicdataapp.database.dao.MahasiswaDao;
 import com.ilhamferdx.projectacademicdataapp.database.dao.MatkulDao;
 import com.ilhamferdx.projectacademicdataapp.database.entity.Dosen;
 import com.ilhamferdx.projectacademicdataapp.database.entity.Jurusan;
+import com.ilhamferdx.projectacademicdataapp.database.entity.Mahasiswa;
 import com.ilhamferdx.projectacademicdataapp.database.entity.Matkul;
 
 @Database(entities = {
         Dosen.class,
         Jurusan.class,
-        Matkul.class
-        }, version = 1)
+        Matkul.class,
+        Mahasiswa.class
+        }, version = 3)
 public abstract class AppDatabase extends RoomDatabase{
     private static AppDatabase sInstance;
     private final MutableLiveData<Boolean> mIsDatabaseCreated = new MutableLiveData<>();
@@ -33,6 +36,7 @@ public abstract class AppDatabase extends RoomDatabase{
     public abstract DosenDao dosenDao();
     public abstract JurusanDao jurusanDao();
     public abstract MatkulDao matkulDao();
+    public abstract MahasiswaDao mahasiswaDao();
 
     private void setDatabaseCreated(){
         mIsDatabaseCreated.postValue(true);

@@ -31,6 +31,7 @@ public class MainJurusan extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Data Jurusan");
         setContentView(R.layout.activity_main_jurusan);
         recyclerViewJrsn = findViewById(R.id.recycler_viewjrsn);
         btnTambahJrsn = findViewById(R.id.btn_tambahjrsn);

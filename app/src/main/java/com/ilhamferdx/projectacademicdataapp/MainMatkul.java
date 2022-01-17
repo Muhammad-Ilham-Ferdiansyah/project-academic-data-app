@@ -31,6 +31,7 @@ public class MainMatkul extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Data Mata Kuliah");
         setContentView(R.layout.activity_main_matkul);
         recyclerViewMatkul = findViewById(R.id.recycler_viewmatkul);
         btnTambahMatkul = findViewById(R.id.btn_tambahmatkul);

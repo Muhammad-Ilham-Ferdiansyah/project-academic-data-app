@@ -30,11 +30,13 @@ public class TambahJurusan extends AppCompatActivity {
         Intent intent = getIntent();
         jrsnid = intent.getIntExtra("jrsnid", 0);
         if (jrsnid>0){
+            setTitle("Edit Data Jurusan");
             isEdit = true;
             Jurusan jurusan = database.jurusanDao().get(jrsnid);
             editNameJrsn.setText(jurusan.nama_jurusan);
             editJenjang.setText(jurusan.jenjang);
         }else{
+            setTitle("Tambah Data Jurusan");
             isEdit = false;
         }
         btnSaveJrsn.setOnClickListener(new View.OnClickListener() {

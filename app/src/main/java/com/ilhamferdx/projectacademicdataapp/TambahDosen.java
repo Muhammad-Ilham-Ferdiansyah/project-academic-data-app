@@ -30,11 +30,13 @@ public class TambahDosen extends AppCompatActivity {
         Intent intent = getIntent();
         dsnid = intent.getIntExtra("dsnid", 0);
         if (dsnid>0){
+            setTitle("Edit Data Dosen");
             isEdit = true;
             Dosen dosen = database.dosenDao().get(dsnid);
             editNameDsn.setText(dosen.nama_dosen);
             editNip.setText(dosen.nip);
         }else{
+            setTitle("Tambah Data Dosen");
             isEdit = false;
         }
         btnSaveDsn.setOnClickListener(new View.OnClickListener() {

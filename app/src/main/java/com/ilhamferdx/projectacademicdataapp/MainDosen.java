@@ -31,6 +31,7 @@ public class MainDosen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Data Dosen");
         setContentView(R.layout.activity_main_dosen);
         recyclerView = findViewById(R.id.recycler_view);
         btnTambah = findViewById(R.id.btn_tambah);
@@ -41,7 +42,7 @@ public class MainDosen extends AppCompatActivity {
         dosenAdapter.setDialog(new DosenAdapter.Dialog() {
             @Override
             public void onClick(int position) {
-                final CharSequence[] dialogItem = {"Edit", "Hapus"};
+                final CharSequence[] dialogItem = {"Edit Dosen", "Hapus Dosen"};
                 dialog = new AlertDialog.Builder(MainDosen.this);
                 dialog.setItems(dialogItem, new DialogInterface.OnClickListener() {
                     @Override

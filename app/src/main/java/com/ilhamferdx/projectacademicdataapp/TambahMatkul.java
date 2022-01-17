@@ -18,8 +18,13 @@ public class TambahMatkul extends AppCompatActivity {
     private int matkulid = 0;
     private boolean isEdit = false;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah_matkul);
         editKodeMatkul  = findViewById(R.id.kode_matkul);
@@ -31,13 +36,16 @@ public class TambahMatkul extends AppCompatActivity {
 
         Intent intent = getIntent();
         matkulid = intent.getIntExtra("matkulid", 0);
+
         if (matkulid>0){
+            setTitle("Edit Data Mata Kuliah");
             isEdit = true;
             Matkul matkul = database.matkulDao().get(matkulid);
             editKodeMatkul.setText(matkul.kode_matkul);
             editNameMatkul.setText(matkul.nama_matkul);
             editSks.setText(matkul.sks);
         }else{
+            setTitle("Tambah Data Mata Kuliah");
             isEdit = false;
         }
         btnSaveMatkul.setOnClickListener(new View.OnClickListener() {

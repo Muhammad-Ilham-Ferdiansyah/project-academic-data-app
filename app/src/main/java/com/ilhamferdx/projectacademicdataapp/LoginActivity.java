@@ -21,9 +21,6 @@ public class LoginActivity extends AppCompatActivity {
     TextView buttonRegister;
     ImageView buttonRegister2;
 
-
-
-
     SharedPreferences sharedPreferences;
 
     private static final String SHARED_PREF_NAME = "mypref";

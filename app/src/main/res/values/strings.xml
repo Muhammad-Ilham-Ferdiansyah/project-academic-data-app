@@ -2,4 +2,13 @@
     <string name="app_name">Academic Data App</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password</string>
+    <string-array name="jurusan">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informatika</item>
+        <item>Farmasi</item>
+        <item>Ilmu Hukum</item>
+        <item>Sastra dan Bahasa Asing</item>
+        <item>Ilmu Kelautan dan Perikanan</item>
+        <item>Ilmu Sosial dan Ilmu Politik</item>
+    </string-array>
 </resources>

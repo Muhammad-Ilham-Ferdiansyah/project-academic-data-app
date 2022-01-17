@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahMatkul">
+    <EditText
+        android:id="@+id/kode_matkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Kode Mata Kuliah"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/nama_matkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nama Mata Kuliah"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/kode_matkul"
+        app:layout_constraintStart_toStartOf="@+id/kode_matkul"
+        app:layout_constraintTop_toBottomOf="@+id/kode_matkul" />
+    <EditText
+        android:id="@+id/sks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Jumlah SKS"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/nama_matkul"
+        app:layout_constraintStart_toStartOf="@+id/nama_matkul"
+        app:layout_constraintTop_toBottomOf="@+id/nama_matkul" />
+    <Button
+        android:id="@+id/btn_savematkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sks"
+        app:layout_constraintStart_toStartOf="@+id/sks"
+        app:layout_constraintTop_toBottomOf="@+id/sks"
+        app:layout_constraintVertical_bias="0.086" />
+</androidx.constraintlayout.widget.ConstraintLayout>

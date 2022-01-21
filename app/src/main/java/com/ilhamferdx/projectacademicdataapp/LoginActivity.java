@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     ImageView buttonRegister2;
 
     SharedPreferences sharedPreferences;
-
+//membuat constanta sharedpref
     private static final String SHARED_PREF_NAME = "mypref";
     private static final String KEY_NAME = "name";
     private static final String KEY_EMAIL = "email";
@@ -77,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String emailValidate = editText_email.getText().toString();
                 String passwordValidate = editText_password.getText().toString();
+
                 if (emailValidate.equals(email) && passwordValidate.equals(password)){
                     Toast.makeText(LoginActivity.this, "Login Successfully!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, BerandaActivity.class);

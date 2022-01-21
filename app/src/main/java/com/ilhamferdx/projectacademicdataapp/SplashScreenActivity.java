@@ -24,6 +24,6 @@ public class SplashScreenActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
             }
-        }, 3000L); //3000 L = 3 detik
+        }, 5000L); //3000 L = 3 detik
     }
 }
